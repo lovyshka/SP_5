@@ -1,5 +1,5 @@
 all: test
-	gcc overflow.c -lm
+	gcc linux_main.c -lm
 
 clean:
 	rm -rf subproc a.out

@@ -1,6 +1,7 @@
-#include "linux_header.h"
+#include "windows_header.h"
 
 int main(int argc, char * argv[]) {       
+    // Sleep(30000);
     char * input_fn = argv[1];
     char * output_fn = argv[2];
     int i = 0, tmp, arr_len = 0, sum = 0;
