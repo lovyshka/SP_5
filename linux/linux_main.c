@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
             
             arr_len = i;
 
-            if (arr_len != 0){
+            if (arr_len > 2){
                 distribution = divided_properly(number_of_child, arr_len, &flag_child);
                 if (flag_child == 0){
                     create_n_input_output_files(arr, distribution, number_of_child);
@@ -41,7 +41,7 @@ int main(int argc, char *argv[]){
                 free(distribution);
             }
             else {
-                printf("Empty file given\n");
+                printf("Empty file given or there are less then 2 numbers\n");             
             }
             free(arr);
         }
