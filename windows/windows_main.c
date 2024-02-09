@@ -43,7 +43,7 @@ int main(int argc, char * argv[]){
                             NULL,
                             &si[j],
                             &pi[j]);
-                        printf("pid = %d\n", GetProcessId(pi[j].hProcess));
+                        // printf("pid = %d\n", GetProcessId(pi[j].hProcess));
                         if (res == 0){
                             printf("Error while creating the process");
                         }
@@ -69,7 +69,7 @@ int main(int argc, char * argv[]){
             } else {
                 printf("Empty file given or there are less then 2 numbers\n");             
             }
-
+            free(arr);
         }else {
             printf("Invalid parameter file or number or children process given\n");
         }
